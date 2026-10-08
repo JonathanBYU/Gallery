@@ -7,7 +7,7 @@ gallerySelection.addEventListener('click', (event) => {
     console.log(event.target.src);
     if (event.target.src) {
         modal.showModal();
-        modalImg.src = event.target.src;
+        modalImg.src = event.target.src.replace("-sm", "-full");
     }
 });
 
