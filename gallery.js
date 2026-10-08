@@ -4,10 +4,9 @@ const modalImg = modal.querySelector("img");
 const closeViewer = modal.querySelector(".close-viewer");
 
 gallerySelection.addEventListener('click', (event) => {
-    console.log(event.target.src);
     if (event.target.src) {
-        modal.showModal();
         modalImg.src = event.target.src.replace("-sm", "-full");
+        modal.showModal();
     }
 });
 
